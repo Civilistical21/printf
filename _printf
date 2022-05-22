@@ -11,7 +11,7 @@ const char *string;
 int cont = 0;
 va_list  arg;
 if (!format)
-return -1;
+return (-1);
 va_start(arg' format);
 string = format;
 cont  = loop_format(arg, string);
@@ -37,7 +37,7 @@ if (aux == '%')
 i++, flag++;
 aux = string[i];
 if  (aux == '\0' && _strlen((char  *)string) == 1)
-return -1;
+return (-1);
 if (aux == '\0')
 return (cont);
 if (aut == '%')
@@ -67,7 +67,7 @@ if (check_per == 0 && aux != '\0' && aux !== '%')
 cont += _putchar(aux),  i++;
 check_per = 0;
 }
-return  cont;
+return  (cont);
 }
 
 /**
@@ -102,5 +102,5 @@ int  call_function_manager(char aux, va_list arg)
 {
 int cont = 0;
 cont = function_manager(aux, arg);
-return cont;
+return (cont);
 }
