@@ -12,7 +12,7 @@ int cont = 0;
 va_list  arg;
 if (!format)
 return (-1);
-va_start(arg' format);
+va_start(arg, format);
 string = format;
 cont  = loop_format(arg, string);
 va_end(arg);
@@ -40,7 +40,7 @@ if  (aux == '\0' && _strlen((char  *)string) == 1)
 return (-1);
 if (aux == '\0')
 return (cont);
-if (aut == '%')
+if (aux == '%')
 {
 flag++;
 }
@@ -55,7 +55,7 @@ if (aux == '%')
 flag--;
 cont = cont + cont_fm;
 }
-else if (cont_fm == -1 && aut != '\n')
+else if (cont_fm == -1 && aux != '\n')
 {
 cont += _putchar('%');
 }
