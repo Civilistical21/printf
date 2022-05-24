@@ -8,13 +8,11 @@
  * in representation parameter for print hexadecimal format
  * Return: address pointer
  */
-
 int print_ptr(va_list arg)
 {
 	unsigned long int dec, buffr;
 	char c[100];
 	int count, n, i;
-
 	dec = (unsigned long int)va_arg(arg, void*);
 	buffr = dec;
 	count = 1;
@@ -51,7 +49,6 @@ int print_ptr(va_list arg)
 	}
 	return (i);
 }
-
 /**
  * print_rot13 - prints a string using rot13
  * @arg: list of arguments from _printf
@@ -82,7 +79,6 @@ int print_rot13(va_list arg)
 	}
 	return (j);
 }
-
 /**
  * print_rev - prints a string in reverse
  * @arg: argument from _printf
@@ -109,6 +105,5 @@ int print_rev(va_list arg)
 	{
 		_putchar(s[j]);
 	}
-
 	return (i);
 }
